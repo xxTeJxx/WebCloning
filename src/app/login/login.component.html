@@ -1,0 +1,60 @@
+<!-- <form [formGroup]="loginform" class="example-form">
+  
+    <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input matInput email required
+        formControlName = "Login_Email"
+        > 
+      </mat-form-field>   
+      <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input matInput password required
+        formControlName = "Password"
+        > 
+      </mat-form-field>  
+      
+      <button mat-flat-button color="accent" (click)="go()">Submit</button>
+           
+
+</form> -->
+
+<body background='C:/Users/gowda/Desktop/as/myapp/src/assets/Banner.png'>
+
+<div class="container">
+
+  <div class="login-form">
+    <div class="logo">
+      <img src="/assets/logo.png" alt="Al-Amanah" />
+    </div>
+    <div class="tabs">
+      <button class="tab active" id="phone-tab" (click)="toggleTabs('phone')">
+        Phone No
+      </button>
+      <button class="tab" id="email-tab" (click)="toggleTabs('email')">
+        Email
+      </button>
+    </div>
+    <form #LoginForm="ngForm" id="phone-form" >
+      <label for="phone-number">Phone Number</label>
+      <input
+        type="number"
+        id="phone-number"
+        name="phone-number"
+        placeholder="Enter Phone number"
+        [(ngModel)]="loginform.Phone_number"
+      />
+      <button type="submit" class="next-btn" (click)="go()">Next</button>
+    </form>
+    <form id="email-form" style="display: none">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter Email"
+        [(ngModel)]="loginform.Email"
+      />
+      <button type="submit" class="next-btn" (click)="go()">Next</button>
+    </form>
+  </div>
+</div>

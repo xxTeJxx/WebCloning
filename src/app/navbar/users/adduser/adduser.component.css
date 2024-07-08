@@ -1,0 +1,35 @@
+
+  .user-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mat-dialog-content {
+    overflow: hidden;
+  }
+  
+  .mat-form-field {
+    width: 100%;
+  }
+  
+  mat-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px ;
+  }
+  
+  button[mat-button] {
+    background-color: #1976d2;
+    color: white;
+  }
+  
+  button[mat-button]:hover {
+    background-color: #155a9a;
+  }
+  

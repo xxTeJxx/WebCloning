@@ -1,0 +1,41 @@
+.colour {
+    background: rgb(223, 222, 222);
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.add-button {
+    background-color: #1976d2;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-transform: none;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-button:hover {
+    background-color: #155a9a;
+}
+
+.add-button::before {
+    content: '+';
+    margin-right: 5px;
+}
+
+.mat-header-cell, .mat-cell {
+    text-align: center;
+    font-weight: bold;
+}
+
+button.mat-fab {
+    margin: 0 5px;
+}
+
+button.mat-fab .mat-icon {
+    font-size: 20px;
+}
